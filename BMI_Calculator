@@ -1,0 +1,9 @@
+# User Inputs
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+
+# Calculation
+bmi = float(weight) / float(height) ** 2
+
+# Print Result - Rounds the result.
+print(round(bmi))
