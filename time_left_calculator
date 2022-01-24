@@ -13,5 +13,5 @@ weeks_until_90 = years_until_90 * 52
 days_until_90 = years_until_90 * 365
 
 # Display
-print(f"You have {years_until_90} years, {months_until_90}, and {days_until_90} left. ")
+print(f"You have {years_until_90} years, {months_until_90} months, and {days_until_90} days left. ")
 
