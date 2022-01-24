@@ -1,0 +1,28 @@
+# Created by David Lander
+# Introduction 
+print("Welcome to the tip calculator! ")
+
+# User Input - Bill Cost
+total_bill = input("What was the total bill? ")
+total_bill = float(total_bill)
+
+# User Input - Tip Percentage
+tip_given = input("What percentage tip would you like to give? 0%, 10%, 12% or 15%? ")
+tip_given_new = int(tip_given) / 100
+
+# Calculations 1
+after_tip = total_bill * tip_given_new
+
+# How many people to divide
+size_of_party = input("How many people to divide by? ")
+size_of_party = int(size_of_party)
+
+# Calculations 2
+final_verdict = (total_bill + after_tip) / size_of_party
+round(final_verdict)
+
+# Print Result
+print("Each person needs to pay " + str(final_verdict))
+
+
+
