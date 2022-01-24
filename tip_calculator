@@ -19,10 +19,7 @@ size_of_party = int(size_of_party)
 
 # Calculations 2
 final_verdict = (total_bill + after_tip) / size_of_party
-round(final_verdict)
+final_verdict = "{:.2f}".format(final_verdict)
 
 # Print Result
-print("Each person needs to pay " + str(final_verdict))
-
-
-
+print(f"Each person should pay: {final_verdict}")
