@@ -1,0 +1,17 @@
+# Created by David Lander
+
+# User Input
+age = input("What is your current age: ")
+
+# Conversion of data type
+age = int(age)
+
+# Calculation
+years_until_90 = 90 - age
+months_until_90 = years_until_90 * 12
+weeks_until_90 = years_until_90 * 52
+days_until_90 = years_until_90 * 365
+
+# Display
+print(f"You have {years_until_90} years, {months_until_90}, and {days_until_90} left. ")
+
