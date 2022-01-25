@@ -1,0 +1,25 @@
+# Created by David Lander
+# User Input
+year = int(input("Which year do you want to check? "))
+
+# Calculations
+calc_1 = year % 4
+calc_1 = float(calc_1)
+# print(calc_1)
+calc_2 = year % 100
+calc_2 = float(calc_2)
+# print(calc_2)
+calc_3 = year % 400
+calc_3 = float(calc_3)
+# print(calc_3)
+
+# Logic
+if calc_1 != 0:
+  print("Not Leap Year")
+elif calc_1 == 0 and calc_2 != 0:
+  print("Leap Year")
+elif calc_2 == 0 and calc_3 != 0:
+  print("Not Leap Year")
+else:
+  print("Leap Year")
+
