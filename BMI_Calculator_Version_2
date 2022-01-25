@@ -1,8 +1,7 @@
 # Created by David Lander
-# Introduction
-print("Hi & Welcome to the BMI Calculator.")
-height = float(input("Please enter your height in m: "))
-weight = float(input("Please enter your weight in kg: "))
+# User Inputs
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
 
 # Calc bmi
 bmi = weight / height ** 2
@@ -14,9 +13,7 @@ if bmi < 18.5:
 elif bmi < 25:
   print(f"Your BMI is {bmi}, you have a normal weight.")
 elif bmi < 30:
-  print(f"Your BMI is {bmi}, you are overweight.")
-elif bmi < 35:
-  print(f"Your BMI is {bmi}, you are obese.")
+  print(f"Your BMI is {bmi}, you are slightly overweight.")
 elif bmi < 35:
   print(f"Your BMI is {bmi}, you are obese.")
 else: 
