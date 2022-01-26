@@ -1,0 +1,47 @@
+# Created by David Lander
+
+# Intro
+print("Welcome to the Love Calculator!")
+
+# User Inputs
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+name1 = str(name1).lower()
+name2 = str(name2).lower()
+
+# Combine Names
+combine_names = name1 + name2
+
+
+# Get Value of Letters (True)
+letter_t = combine_names.count("t")
+letter_r = combine_names.count("r")
+letter_u = combine_names.count("u")
+letter_e1 = combine_names.count("e")
+
+# Get Value of Letters (Love)
+letter_l = combine_names.count("l")
+letter_o = combine_names.count("o")
+letter_v = combine_names.count("v")
+letter_e2 = combine_names.count("e")
+
+# Add True
+true_total = letter_t + letter_r + letter_u + letter_e1
+true_total = str(true_total)
+
+# Add Love
+love_total = letter_l + letter_o + letter_v + letter_e2
+love_total = str(love_total)
+# Calc
+total_score = true_total + love_total
+total_score = int(total_score)
+
+# Logic
+if total_score <= 10 or total_score >= 90:
+  print(f"Your score is {total_score}, you go together like coke and mentos.")
+elif total_score > 40 and total_score < 50:
+  print(f"Your score is {total_score}, you are alright together.")
+else:
+  print(f"Your score is {total_score}")
+
