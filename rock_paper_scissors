@@ -1,0 +1,121 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
+import random 
+ 
+computer_chose = random.randint(0, 2)
+
+  
+# Get User Input
+user_choice = int(input("What do you chose? Type 0 for Rock, 1 for Paper or 2 for Scissors. \n"))
+
+# User chooses Rock
+if user_choice == 0 and computer_chose == 0:
+  print("You chose:")
+  print(rock)
+  print("Computer Chose:")
+  print(rock)
+  print("Draw")
+
+elif user_choice == 0 and computer_chose == 1:
+  print("You chose:")
+  print(rock)
+  print("Computer Chose:")
+  print(paper)
+  print("You lose")
+
+elif user_choice == 0 and computer_chose == 2:
+  print("You chose:")
+  print(rock)
+  print("Computer chose:")
+  print(scissors)
+  print("You win")
+  
+elif user_choice == 1 and computer_chose == 0:
+  print("You chose:")
+  print(rock)
+  print("Computer Chose:")
+  print(rock)
+  print("You lose")
+
+# User chooses Paper
+
+if user_choice == 1 and computer_chose == 0:
+  print("You chose:")
+  print(paper)
+  print("Computer Chose:")
+  print(rock)
+  print("You win")
+
+elif user_choice == 1 and computer_chose == 1:
+  print("You chose:")
+  print(paper)
+  print("Computer chose:")
+  print(paper)
+  print("Draw")
+
+elif user_choice == 1 and computer_chose == 2:
+  print("You chose:")
+  print(paper)
+  print("Computer Chose:")
+  print(scissors)
+  print("You lose")
+
+
+# User chooses scissors
+
+if user_choice == 2 and computer_chose == 0:
+  print("You chose:")
+  print(scissors)
+  print("Computer Chose:")
+  print(rock)
+  print("You lose")
+
+elif user_choice == 2 and computer_chose == 1:
+  print("You chose:")
+  print(scissors)
+  print("Computer chose:")
+  print(paper)
+  print("You win")
+
+elif user_choice == 2 and computer_chose == 2:
+  print("You chose:")
+  print(scissors)
+  print("Computer chose:")
+  print(scissors)
+  print("Draw")
+
+else:
+  if user_choice > 2:
+    print("You typed an invalid number, you lose! ")
+
+
+
+
+
+
